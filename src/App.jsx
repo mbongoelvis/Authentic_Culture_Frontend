@@ -1,11 +1,26 @@
 import './App.css'
+import { Route, Routes} from 'react-router-dom'
+import { HomePage } from '../pages/Homepage/HomePage'
+import { BlogPage } from '../pages/Blogpage/BlogPage'
+import { ExplorePage } from '../pages/ExplorePage/ExplorePage'
+import { AboutPage } from '../pages/AboutPage/AboutPage'
+import ExploreContents from '../pages/ExplorePage/ExploreContents'
+
+
 
 function App() {
-  return (
-    <div className='h-screen flex items-center justify-center text-[4vw] w-full'>
-    welcome Developer abeg no spoil me code
-    </div>
-  )
+	return (
+		<div className="App container">
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/Explore" element={<ExplorePage />} />
+				<Route path="/blog" element={<BlogPage />} />
+				<Route path="/about" element={<AboutPage />} />
+				<Route path="/Explore/:id" element={<ExploreContents />} />
+			</Routes>
+		</div>
+
+	)
 }
 
 export default App

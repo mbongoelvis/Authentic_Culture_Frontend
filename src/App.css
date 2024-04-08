@@ -4,3 +4,41 @@
   box-sizing: border-box;
   font-family: poppins;
 }
+.animate_fade_buttom{
+	animation: fade_in_bottom 1s forwards ease-in-out;
+}
+.animate_fade_buttom_2s{
+	animation: fade_in_bottom 1s  forwards ease-in-out;
+	animation-delay: 1s;
+}
+.animate_fade_right{
+	animation: fade_in_right 1s  forwards ease-in-out;
+	animation-delay: 2s;
+}
+
+@keyframes fade_in_bottom {
+	from{
+		transform: translateY(500px);
+		opacity: 0;
+		filter: blur(5px);
+	}
+	to{
+		transform: translateY(0);
+		opacity: 1;
+		filter: blur(0px);
+	}
+	
+}
+@keyframes fade_in_right {
+	from{
+		transform: translatex(500px);
+		opacity: 0;
+		filter: blur(5px);
+	}
+	to{
+		transform: translatex(0);
+		opacity: 1;
+		filter: blur(0px);
+	}
+	
+}

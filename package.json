@@ -12,9 +12,11 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fancy-circular-carousel": "^1.0.8",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
-    "spinners": "^1.2.2"
+    "spinners": "^1.2.2",
+    "swiper": "^11.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
