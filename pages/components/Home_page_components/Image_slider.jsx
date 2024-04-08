@@ -14,7 +14,7 @@ import { Slider_images } from "../Image_slider/Slider_images"
 
 export default function Image_slider() {
 	return (
-		<div className={`container my-20 flex justify-center lg:px-30 lg:pl-20 py-20 m-0 bg-black`}>
+		<div className={`my-20 flex justify-center lg:px-30 lg:pl-20 py-20 m-0 bg-black`}>
 			<Swiper
 				effect={'coverflow'}
 				
