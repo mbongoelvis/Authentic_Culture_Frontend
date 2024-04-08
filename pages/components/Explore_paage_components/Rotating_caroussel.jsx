@@ -4,6 +4,7 @@ import FancyCarousel from "react-fancy-circular-carousel";
 import 'react-fancy-circular-carousel/FancyCarousel.css';
 import { images, details } from "./Tribes_preview"
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Rotating_caroussel({ changer }) {
 	const [showdit, Setshowdit] = useState(0)
@@ -40,7 +41,7 @@ export default function Rotating_caroussel({ changer }) {
 			<div className="absolute top-[57%] px-2 lg:px-0 lg:top-[35%] text-white lg:left-[10%] flex gap-3 flex-col items-center lg:items-start">
 				<h1 className="text-center lg:text-[6rem] capitalize font-bold py-0 leading-none text-3xl ">{details[showdit].title}</h1>
 				<p className="lg:w-[45%] text-center lg:text-start ">{details[showdit].dit}</p>
-				<button className="capitalize px-10 py-3  border-[3px] w-[200px] mt-3 hover:border-[#c45a13]">learn more</button>
+				<Link to={`/Explore/${details[showdit].title}`}><button className="capitalize px-10 py-3  border-[3px] w-[200px] mt-3 hover:border-[#c45a13]">learn more</button></Link>
 			</div>
 		</div>
 	)
