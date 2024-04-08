@@ -8,7 +8,7 @@ import Introduction_section from "../components/Home_page_components/Introductio
 
 export const HomePage = () => {
   return (
-    <div>
+    <div className="">
 		<Carousel/>
 		<Introduction_section/>
 		<div className="">

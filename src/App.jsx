@@ -11,7 +11,7 @@ import { Dashboard } from '../dashboard/Dashboard'
 
 function App() {
 	return (
-		<div className="App container">
+		<div className="App">
 			<Routes>
 				<Route path="/" element={<HomePage />} />
 				<Route path="/Explore" element={<ExplorePage />} />
