@@ -8,10 +8,6 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 
-
-
-
-
 //import {img1} from "./Caroussel_images/1.jpeg"
 export default function Carousel() {
 	let [change, setchange] = useState(0)
