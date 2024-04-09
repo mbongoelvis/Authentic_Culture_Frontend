@@ -42,3 +42,7 @@
 	}
 	
 }
+
+.hidde_scroll::-webkit-scrollbar{
+	display: none;
+}

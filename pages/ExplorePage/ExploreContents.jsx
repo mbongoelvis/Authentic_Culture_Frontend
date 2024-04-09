@@ -33,7 +33,7 @@ export default function ExploreContents() {
 	return (
 		<div className="h-[100vh]">
 			<ExploreContent_banner tribe={tribe} />
-			<div className="flex relative h-[85%] overflow-hidden">
+			<div className="flex relative h-[85%] overflow-hidden lg:px-[10%] px-5">
 				{Component(tribe)}
 			</div>
 		</div>
